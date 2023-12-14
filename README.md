@@ -6,7 +6,7 @@
 #!/bin/bash
 #run_pviewlist.sh
 
-rm -f missingviewslist_$region.log
+
 
 rm -f pviewlist.sh
 wget https://raw.githubusercontent.com/BaptisS/oci_listpviews/main/pviewlist.sh
@@ -23,6 +23,8 @@ export region=''
 export resolverid01=''
 #export resolverid02=''
 #export resolverid03=''
+
+rm -f missingviewslist_$region.log
 
 #./pviewlist.sh $region $resolverid01 $resolverid02 $resolverid03
 ./pviewlist.sh $region $resolverid01 
