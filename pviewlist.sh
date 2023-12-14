@@ -53,6 +53,7 @@ for view in $missingviews
             rm -f $view.*
         fi
         echo ##################################################################
+        cat missingviews_$region.log >> missingviewslist_$region.log
     done
-    cat missingviews_$region.log >> missingviewslist_$region.log
+    
 
