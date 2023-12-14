@@ -7,7 +7,7 @@
 #run_pviewlist.sh
 
 
-
+rm -f missingviewslist_*.log
 rm -f pviewlist.sh
 wget https://raw.githubusercontent.com/BaptisS/oci_listpviews/main/pviewlist.sh
 chmod +x pviewlist.sh
@@ -36,6 +36,6 @@ export resolverid01=''
 
 ./pviewlist.sh $region $resolverid01
 
-cat missingviewslist_$region.log
+cat missingviewslist_*.log
 
 ```
